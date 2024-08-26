@@ -114,8 +114,9 @@ export default {
         </div>
         <div>
           <h1 class="font-bold text-lg">Bachelor of Science - MacEwan University (September 2020 - June 2025)</h1>
-          <h1 class="font-bold text-lg">Major: Computer Science</h1>
+          <h1 class="font-bold text-lg mt-4">Major: Computer Science</h1>
           <h1 class="font-bold text-lg">Minor: Psychology</h1>
+          <p class="font-bold text-base mt-4">Relevant Courses</p>
           <p class="text-base">CMPT 395 - Introduction to Software Engineering</p>
           <p class="text-base">CMPT 220 - Unix, Scripting, Linux, and Bash</p>
           <p class="text-base">CMPT 280 - Introduction to Computer Security</p>
