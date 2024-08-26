@@ -1,8 +1,8 @@
 <template>
-    <section :class="['h-screen pt-24 pl-20 transition-transform transition-opacity duration-500',{ 'animate-slideInLeft': isVisible, 'animate-slideOutLeft': !isVisible }]"ref="section">
-        <h2 class="text-white text-8xl font-bold pb-4 pt-16 pl-16">{{ title }}</h2>
+    <section :class="['h-screen pt-24 pl-8 transition-transform transition-opacity duration-500',{ 'animate-slideInLeft': isVisible, 'animate-slideOutLeft': !isVisible }]"ref="section">
+        <h2 class="text-white text-6xl font-bold pb-4 pt-16 pl-16">{{ title }}</h2>
         <h2 class="text-white text-3xl pl-16 font-bold">{{ content }}</h2>
-        <ExperienceEducation/>
+        <ExperienceEducation class="ml-2"/>
     </section>
 </template>
   

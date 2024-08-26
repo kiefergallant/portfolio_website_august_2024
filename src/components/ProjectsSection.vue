@@ -1,14 +1,16 @@
 <template>
+  <div class="container ">
     <section
       :class="[
-        'h-screen pt-24 pl-20 transition-transform transition-opacity duration-500',
+        'h-screen pl-8 transition-transform transition-opacity duration-500',
         { 'animate-slideInLeft': isVisible, 'animate-slideOutLeft': !isVisible }
       ]"
       ref="section"
     >
-    <h2 class="text-white text-8xl font-bold pb-4 pt-16 pl-16">{{ title }}</h2>
+    <h2 class="text-white text-6xl font-bold pb-4 mt-48 pt-48 pl-16">{{ title }}</h2>
     <h2 class="text-white text-3xl pl-16 font-bold">{{ content }}</h2>
     </section>
+  </div>
   </template>
   
   <script>
