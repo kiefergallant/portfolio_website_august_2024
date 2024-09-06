@@ -1,7 +1,12 @@
 <template>
     <section :class="['h-screen pt-24 pl-8 transition-transform transition-opacity duration-500',{ 'animate-slideInLeft': isVisible, 'animate-slideOutLeft': !isVisible }]"ref="section">
-        <h2 class="text-white text-6xl font-bold pb-4 pt-16 pl-16">{{ title }}</h2>
-        <h2 class="text-white text-3xl pl-16 font-bold">{{ content }}</h2>
+      <div class="grid grid-rows-3 grid-flow-col gap-4">
+        <h2 class="col-span-2 text-white text-6xl font-bold pl-16 pb-1">{{ title }}</h2>
+        <h2 class="col-span-2 text-white text-3xl pl-16 font-bold">{{ content }}</h2>
+      </div>
+          
+
+
         <ExperienceEducation class="ml-2"/>
     </section>
 </template>
@@ -21,7 +26,7 @@ import ExperienceEducation from './ExperienceEducation.vue';
     mounted() {
       this.checkVisibility();
       window.addEventListener('scroll', this.checkVisibility);
-      window.addEventListener('resize', this.checkVisibility); // Handle resize as well
+      window.addEventListener('resize', this.checkVisibility);
     },
     beforeDestroy() {
       window.removeEventListener('scroll', this.checkVisibility);
@@ -39,7 +44,7 @@ import ExperienceEducation from './ExperienceEducation.vue';
           
           setTimeout(() => {
             this.isAnimating = false;
-          }, 500); // Matches the duration of the animation
+          }, 500); 
         }
       }
     },
@@ -55,7 +60,7 @@ import ExperienceEducation from './ExperienceEducation.vue';
   </script>
   
   <style scoped>
-  /* Define transition classes */
+  
   .opacity-0 {
     opacity: 0;
   }
