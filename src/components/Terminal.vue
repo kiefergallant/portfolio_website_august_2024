@@ -24,7 +24,7 @@
 
 <style scoped>
 .terminal-box {
-  @apply w-96 h-48 border-2 border-slate-400 rounded-2xl bg-black text-white p-4 relative;
+  @apply w-96 h-48 border-2 border-neutral-800 rounded-2xl bg-black text-white p-4 relative;
 }
 
 .buttons {
